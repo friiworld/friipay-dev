@@ -112,34 +112,37 @@ The access token should be included in the POST header in the following format:
 Authorization: Bearer {access_token}
 The following fields are required to submit a payment to Frii:
 
-Field Name	Description
-	
-‘friipos_id’	FriiPOS identifier
-‘value’	Payment amount with 2 decimal places
+|Field Name	|Description|
+|-------------|--------------------|	
+‘friipos_id’	|FriiPOS identifier
+‘value’	|Payment amount with 2 decimal places
  
 Once submitted, the Frii Platform will return a JSON containing the following fields
  
-Field Name	Description
-‘status’	‘200’ - ok, or ‘400’ - bad request
-‘frii_guid’	FriiPay transaction ID - Varchar(255)
-‘qr_png’	Url to display QR code - string
-‘websocket_status’	WSS address for status updates - string
-‘websocket_validation’	WSS address for transaction validation - string
-‘cancel_url’	Url for terminating the transaction
+|Field Name	|Description|
+|---------------|---------------|
+‘status’	|‘200’ - ok, or ‘400’ - bad request
+‘frii_guid’	|FriiPay transaction ID - Varchar(255)
+‘qr_png’	|Url to display QR code - string
+‘websocket_status’	|WSS address for status updates - string
+‘websocket_validation’	|WSS address for transaction validation - string
+‘cancel_url’	|Url for terminating the transaction
 
 The frii_guid provides a unique reference to the transaction on the frii platform and will be required for any direct queries with Frii.
 The QR can be scanned by any Frii/Xumm App to sign and satisfy the associated payload.
 The websocket_status will be used to listen for live updates on the transaction status including the following events:
-Websocket_status events	Description
-expires_in_seconds	Time before payload expires
-scanned	QR has been scanned by Frii/Xumm app
-signed	Payload has been signed
-completed	Transaction completed
-rejected	Transaction rejected by user
+|Websocket_status events	|Description|
+|------------------|----------------|
+expires_in_seconds	|Time before payload expires
+scanned	|QR has been scanned by Frii/Xumm app
+signed	|Payload has been signed
+completed	|Transaction completed
+rejected	|Transaction rejected by user
 
 The websocket_validation will be used for live updates on transaction completion including the following events:
-Websocket_validation events	Description
-cancelled	Operator / system has cancelled the transaction
-validated	The requested funds have been received
+|Websocket_validation events	|Description|
+|-----------------|------------------|
+cancelled	|Operator / system has cancelled the transaction
+validated	|The requested funds have been received
 
 The cancel url has been provided to allow the operator to swiftly cancel a transaction that has not been signed yet. NB We strongly advise that any 
