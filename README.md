@@ -1,4 +1,4 @@
-# FriiPay Developer Note
+# FriiPay Developer Notes
 Developer guidance and proposed APIs for integration with the Frii Pay crypto payment platform.
 ## Overview
 This document outlines the proposed services offered by the Frii platform to enable cryptocurrency payments by 3rd parties.
