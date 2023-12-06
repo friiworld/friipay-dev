@@ -22,84 +22,85 @@ The access token should be included in the POST header in the following format:
 Authorization: Bearer {access_token}
 The following fields are required to board a new merchant to Frii:
  
-Field Name	Description
- `site_rep_id`	Agent identifier
- `incorp_date`	Company incorporation date
- `co_reg_number`	Company registration number
- `vat_reg_number`	VAT registration number
- `legal_name`	Legal Name
- `short_name`	Trading Name
- `reg_add1`	Registered Address Line 1
- `reg_add2`	Registered Address Line 2
- `reg_add_town`	Registered Add Town
- `reg_add_county`	Registered Add County / State
- `reg_add_country`	Registered Add Country
- `reg_add_postcode`	Registered Add Postcode / Zip
- `reg_phone`	Registered Phone
- `reg_mobile`	Registered Mobile
- `reg_email`	Registered Email
- `reg_agent`	Registered Agent
- `trad_name`	Tradiing Name
- `trad_add1`	Trading Add Line 1
- `trad_add2`	Trading Add Line 2
- `trad_add_town`	Trading Add Town
- `trad_add_county`	Trading Add County / State
- `trad_add_country`	Trading Add Country
- `trad_add_postcode`	Trading Add Postcode / Zip
- `lat`	Trading Latitude (optional)
- `lon`	Trading Longtitude (optional)
- `trad_tel`	Trading Tel
- `trad_email`	Trading Email
- `trad_description`	Business Description
- `website_url`	Website Url
- `contact_first_name`	Contact First Name
- `contact_last_name`	Contact Last Name
- `contact_tel`	Contact Tel
- `contact_mob`	Contact Mob
- `contact_email`	Contact Email
- `acc_title`	Bank Acc Title
- `acc_first_name`	Bank Acc First Name
- `acc_last_name`	Bank Acc Last Name
- `sort_code`	Bank Acc Sort Code
- `acc_no`	Bank Account No IBAN
- `bank_name`	Bank Name
- `p1_fname`	Principle owner First Name
- `p1_mname`	Principle owner Middle Name
- `p1_surname`	Principle owner Surname
- `p1_dob`	Principle owner DOB - DD/MM/YYYY
- `p1_national_insurance_number`	Principle owner National Insurance No
- `p1_add1`	Principle owner Add Line 1
- `p1_add2`	Principle owner Add Line 2
- `p1_addtown`	Principle owner Add Town
- `p1_addcounty`	Principle owner Add County / state
- `p1_addcountry`	Principle owner Add Country
- `p1_addpcode`	Principle owner Add Postcode / Zip
- `p1_addstatus`	Property status Owned / Rented
- `p1_addyr`	Lived there since - YYYY
- `p1_addmonth`	Lived there since - MM
- `p1_share`	Principle owner Share percentage
- `p2_fname`	Second Principle First Name
- `p2_mname`	Second Principle Middle Name
- `p2_surname`	Second Principle Surname
- `p2_dob`	Second Principler DOB - DD/MM/YYYY
- `p2_national_insurance_number`	Second Principle National Insurance No
- `p2_add1`	Second Principle Add Line 1
- `p2_add2`	Second Principle Add Line 2
- `p2_addtown`	Second Principle Add Town
- `p2_addcounty`	Second Principle Add County / state
- `p2_addcountry`	Second Principle Add Country
- `p2_addpcode`	Second Principle Add Postcode / Zip
- `p2_addstatus`	Property status Owned / Rented
- `p2_addyr`	Lived there since - YYYY
- `p2_addmonth`	Lived there since - MM
- `p2_share`	Second Principle Share percentage
+| Field Name |	Description |
+| ---------------- | ------------ |
+| `site_rep_id`	| Agent identifier |
+| `incorp_date`	| Company incorporation date |
+| `co_reg_number` |	Company registration number |
+| `vat_reg_number` |	VAT registration number |
+ | `legal_name`	| Legal Name |
+| `short_name`	|Trading Name|
+ |`reg_add1`	|Registered Address Line 1|
+| `reg_add2`	|Registered Address Line 2|
+| `reg_add_town`	|Registered Add Town|
+ `reg_add_county`	|Registered Add County / State
+ `reg_add_country`	|Registered Add Country
+ `reg_add_postcode`	|Registered Add Postcode / Zip
+ `reg_phone`	|Registered Phone
+ `reg_mobile`	|Registered Mobile
+ `reg_email`	|Registered Email
+ `reg_agent`	|Registered Agent
+ `trad_name`	|Tradiing Name
+ `trad_add1`	|Trading Add Line 1
+ `trad_add2`	|Trading Add Line 2
+ `trad_add_town`	|Trading Add Town
+ `trad_add_county`	|Trading Add County / State
+ `trad_add_country`	|Trading Add Country
+ `trad_add_postcode`	|Trading Add Postcode / Zip
+ `lat`	|Trading Latitude (optional)
+ `lon`	|Trading Longtitude (optional)
+ `trad_tel`	|Trading Tel
+ `trad_email`	|Trading Email
+ `trad_description`	|Business Description
+ `website_url`	|Website Url
+ `contact_first_name`	|Contact First Name
+ `contact_last_name`	|Contact Last Name
+ `contact_tel`	|Contact Tel
+ `contact_mob`	|Contact Mob
+ `contact_email`	|Contact Email
+ `acc_title`	|Bank Acc Title
+ `acc_first_name`	|Bank Acc First Name
+ `acc_last_name`	|Bank Acc Last Name
+ `sort_code`	|Bank Acc Sort Code
+ `acc_no`	|Bank Account No IBAN
+ `bank_name`	|Bank Name
+ `p1_fname`	|Principle owner First Name
+ `p1_mname`	|Principle owner Middle Name
+ `p1_surname`	|Principle owner Surname
+ `p1_dob`	|Principle owner DOB - DD/MM/YYYY
+ `p1_national_insurance_number`	|Principle owner National Insurance No
+ `p1_add1`	|Principle owner Add Line 1
+ `p1_add2`	|Principle owner Add Line 2
+ `p1_addtown`	|Principle owner Add Town
+ `p1_addcounty`	|Principle owner Add County / state
+ `p1_addcountry`	|Principle owner Add Country
+ `p1_addpcode`	|Principle owner Add Postcode / Zip
+ `p1_addstatus`	|Property status Owned / Rented
+ `p1_addyr`	|Lived there since - YYYY
+ `p1_addmonth`	|Lived there since - MM
+ `p1_share`	|Principle owner Share percentage
+ `p2_fname`	|Second Principle First Name
+ `p2_mname`	|Second Principle Middle Name
+ `p2_surname`	|Second Principle Surname
+ `p2_dob`	|Second Principler DOB - DD/MM/YYYY
+ `p2_national_insurance_number`	|Second Principle National Insurance No
+ `p2_add1`	|Second Principle Add Line 1
+ `p2_add2`	|Second Principle Add Line 2
+ `p2_addtown`	|Second Principle Add Town
+ `p2_addcounty`	|Second Principle Add County / state
+ `p2_addcountry`	|Second Principle Add Country
+ `p2_addpcode`	|Second Principle Add Postcode / Zip
+ `p2_addstatus`	|Property status Owned / Rented
+ `p2_addyr`	|Lived there since - YYYY
+ `p2_addmonth`	|Lived there since - MM
+ `p2_share`	|Second Principle Share percentage
 *replace p2 with p3 etc as required	
- `logo_image`	logo in base 64 encoded png 512x512px
- `trading_currency`	Currency code i.e. GBP/USD/EUR
- `media_1`	Business Image 1 in base 64 encoded png 1024x768px
- `media_2`	Business Image 2 in base 64 encoded png 1024x768px
- `media_3`	Business Image 3 in base 64 encoded png 1024x768px
- `media_4`	Business Image 4 in base 64 encoded png 1024x768px
+ `logo_image`	|logo in base 64 encoded png 512x512px
+ `trading_currency`	|Currency code i.e. GBP/USD/EUR
+ `media_1`	|Business Image 1 in base 64 encoded png 1024x768px
+ `media_2`	|Business Image 2 in base 64 encoded png 1024x768px
+ `media_3`	|Business Image 3 in base 64 encoded png 1024x768px
+ `media_4`	|Business Image 4 in base 64 encoded png 1024x768px
 
 ### Payment Transaction
 FriiPay transactions can currently only be submitted via FriiPOS applications.
